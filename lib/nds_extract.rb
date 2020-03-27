@@ -2,13 +2,13 @@ $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'directors_database'
 
 def list_of_directors(source)
-  dir_ls=[]
-  dir_ls_i=0
+  director_list=[]
+  counter= 0
   while dir_ls_i<source.length
-  dir_ls << source[dir_ls_i][:name]
-  dir_ls_i+=1
+  director_list << source[counter][:name]
+  counter +=1
   end
-  dir_ls
+  director_list
 end
 
 def total_gross(source)
