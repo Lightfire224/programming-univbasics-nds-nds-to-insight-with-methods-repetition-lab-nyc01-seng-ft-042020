@@ -4,7 +4,7 @@ require 'directors_database'
 def list_of_directors(source)
   director_list=[]
   counter= 0
-  while dir_ls_i<source.length
+  while counter<source.length
   director_list << source[counter][:name]
   counter +=1
   end
