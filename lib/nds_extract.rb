@@ -11,9 +11,17 @@ def list_of_directors(source)
   dir_ls
 end
 
-def total_gross(directors_database)
-  
-end
+def total_gross(source)
+    counter = 0
+    grand_total = 0
+    director_total = directors_totals(source) 
+    director_list = list_of_directors(source)
+    while counter < director_list.length do
+      total += director_total[director_list[i]]
+      counter += 1
+    end
+    grand_total
+  end
 
 def gross_for_director(director_data)
   integer=0
