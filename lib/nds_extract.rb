@@ -34,11 +34,11 @@ def gross_for_director(director_data)
 end
  
 def directors_totals(nds)
-  result = {}
-  director_i = 0
-  while director_i < nds.length do
-    result[nds[director_i][:name]] = gross_for_director(directors_database[director_i])
-    director_i += 1
+  hash = {}
+  director_number = 0
+  while director_number < nds.length do
+    result[nds[director_number][:name]] = gross_for_director(directors_database[director_number])
+    director_number += 1
   end
- result
+ hash
 end
