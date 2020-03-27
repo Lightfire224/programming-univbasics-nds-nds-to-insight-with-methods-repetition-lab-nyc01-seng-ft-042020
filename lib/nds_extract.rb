@@ -4,7 +4,7 @@ require 'directors_database'
 def list_of_directors(stooges)
 end
 
-def total_gross
+def total_gross(directors_database)
   
 end
 
