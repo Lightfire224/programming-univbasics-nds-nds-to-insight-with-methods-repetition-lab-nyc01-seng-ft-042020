@@ -1,6 +1,13 @@
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'directors_database'
 
+def list_of_directors(stooges)
+end
+
+def total_gross
+  
+end
+
 def gross_for_director(director_data)
   integer=0
   i = 0
